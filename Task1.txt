@@ -1,0 +1,18 @@
+Question: Which loop system would be better for user input. Justify your answer by creating a program that takes a value and adds it to a variable and prints it repeatedly until the user enters a zero value.
+
+Answer: In C, a while loop is better for this scenario because we don’t know the number of iterations in advance. It allows us to repeatedly take user input, update a variable, and exit the loop when the user enters zero.
+
+Example:
+
+#include<stdio.h>
+int main(){
+	int num;
+	do{
+	printf("Please enter a number other than zero: ");
+	scanf("%d", &num);
+	if (num==0){
+	printf("Loop terminated as number is zero");
+		   }
+	  }
+	while(num!=0);
+	  }
